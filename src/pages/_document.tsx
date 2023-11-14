@@ -5,7 +5,7 @@ import getConfig from 'next/config'
 const { publicRuntimeConfig } = getConfig()
 const { ENV } = publicRuntimeConfig
 
-export default class AllstayDocument extends Document {
+export default class EthanDocument extends Document {
   render() {
     return (
       <Html lang="ko">
@@ -37,7 +37,7 @@ export default class AllstayDocument extends Document {
   }
 }
 
-AllstayDocument.getInitialProps = async ctx => {
+EthanDocument.getInitialProps = async ctx => {
   const originalRenderPage = ctx.renderPage
 
   ctx.renderPage = () => originalRenderPage()
